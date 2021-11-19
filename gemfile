@@ -1,8 +1,14 @@
 source "https://rubygems.org"
 
+ruby "2.7.0"
+
 gem "sinatra", "~>1.4.7"
 gem "sinatra-contrib"
 gem "erubis"
 gem "webrick"
 gem "pry", "0.13.0"
 gem "pry-byebug"
+
+group :production do
+  gem "puma"
+end

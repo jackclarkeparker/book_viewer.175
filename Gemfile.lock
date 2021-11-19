@@ -7,12 +7,15 @@ GEM
     erubis (2.7.0)
     method_source (1.0.0)
     multi_json (1.12.1)
+    nio4r (2.5.8)
     pry (0.13.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-byebug (3.9.0)
       byebug (~> 11.0)
       pry (~> 0.13.0)
+    puma (5.5.2)
+      nio4r (~> 2.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -39,9 +42,13 @@ DEPENDENCIES
   erubis
   pry (= 0.13.0)
   pry-byebug
+  puma
   sinatra (~> 1.4.7)
   sinatra-contrib
   webrick
 
+RUBY VERSION
+   ruby 2.7.0p0
+
 BUNDLED WITH
-   2.2.15
+   2.2.31
