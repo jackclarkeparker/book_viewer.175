@@ -36,6 +36,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  linux
   ruby
 
 DEPENDENCIES
