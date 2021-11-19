@@ -1,0 +1,43 @@
+<%# My version of this view %>
+
+<%
+=begin %>
+<!doctype html>
+<html>
+<body>
+<%
+=end %>
+  <% @files.each do |file| %>
+    <a href="/<%= file %>"><%= file %></a><br>
+  <% end %>
+  <lb>
+  <pre><a href="?order=ascending">Sort Ascending</a>   <a href="?order=descending">Sort Descending</a></pre>
+<%
+=begin %>
+</body>
+</html>
+<%
+=end %>
+<%
+=begin %>
+
+Launch School's solution
+
+<ul>
+  <% @files.each do |file| %>
+    <li>
+      <a href="<%= file %>"><%= file %></a>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+  <% if params["sort"] == "desc" %>
+    <a href="/">Sort ascending</a>
+  <% else %>
+    <a href="/?sort=desc">Sort descending</a>
+  <% end %>
+</p>
+
+<%
+=end %>
